@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Adeyeye seyi
 - 👀 I’m interested in website application programming
-- 🌱 I’m currently learning django
+- 🌱 I’m currently learning Elixir
 - 💞️ I’m looking to collaborate on website backend
 - 📫 How to reach me +2347030873431
 
