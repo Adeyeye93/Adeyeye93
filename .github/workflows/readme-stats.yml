@@ -1,0 +1,52 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # daily at midnight UTC
+  workflow_dispatch:        # lets you trigger it manually from the Actions tab
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          github_token: ${{ secrets.GH_STATS_TOKEN }}
+          username: Adeyeye93
+          show_icons: true
+          theme: tokyonight
+          hide_border: true
+          output: profile/stats.svg
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          github_token: ${{ secrets.GH_STATS_TOKEN }}
+          username: Adeyeye93
+          card: top-langs
+          layout: compact
+          theme: tokyonight
+          hide_border: true
+          output: profile/top-langs.svg
+
+      - name: Generate streak card
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          user_id: Adeyeye93
+          theme: tokyonight
+          hide_border: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+
+      - name: Commit updated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile/
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: refresh profile stats"
+          git push
