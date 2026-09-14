@@ -1,5 +1,8 @@
-<h1 align="center">Hi, I'm Adeyeye Seyi 👋</h1>
-<h3 align="center">Founder & Lead Architect @ Echo — building audio streaming infrastructure for African markets</h3>
+<p align="center">
+  <a href="https://github.com/Adeyeye93">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Adeyeye+Seyi;Founder+%26+Lead+Architect+%40+Echo;Building+audio+streaming+infra+for+Africa" alt="Typing SVG" />
+  </a>
+</p>
 
 <p align="center">
   <a href="https://linkedin.com/in/YOUR-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
@@ -42,17 +45,15 @@ I'm a self-taught software engineer based in Lagos, Nigeria, currently building 
 ### GitHub Stats
 
 <p align="left">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Adeyeye93&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Adeyeye93&layout=compact&theme=tokyonight&hide_border=true" />
+  <img height="165" src="./profile/stats.svg" alt="GitHub stats" />
+  <img height="165" src="./profile/top-langs.svg" alt="Top languages" />
 </p>
 
 <p align="left">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Adeyeye93&theme=tokyonight&hide_border=true" />
+  <img src="./profile/streak-stats.svg" alt="GitHub streak" />
 </p>
 
-<p align="left">
-  <img src="https://github-profile-trophy.vercel.app/?username=Adeyeye93&theme=tokyonight&no-frame=true&row=1&column=6" />
-</p>
+> Stats above are regenerated daily by a GitHub Action (see `.github/workflows/readme-stats.yml`) and committed as static files, so they stay up even if third-party badge services rate-limit or go down.
 
 ### Featured Project
 
