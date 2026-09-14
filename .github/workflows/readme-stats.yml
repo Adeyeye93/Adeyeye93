@@ -1,4 +1,4 @@
-name: Update profile stats
+name: Update README cards
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:        # lets you trigger it manually from the Actions tab
 
 jobs:
-  update-stats:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -16,34 +16,20 @@ jobs:
       - name: Generate stats card
         uses: stats-organization/github-readme-stats-action@v2
         with:
-          github_token: ${{ secrets.GH_STATS_TOKEN }}
-          username: Adeyeye93
-          show_icons: true
-          theme: tokyonight
-          hide_border: true
-          output: profile/stats.svg
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
         uses: stats-organization/github-readme-stats-action@v2
         with:
-          github_token: ${{ secrets.GH_STATS_TOKEN }}
-          username: Adeyeye93
           card: top-langs
-          layout: compact
-          theme: tokyonight
-          hide_border: true
-          output: profile/top-langs.svg
+          options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate streak card
-        uses: DenverCoder1/github-readme-streak-stats@main
-        with:
-          user_id: Adeyeye93
-          theme: tokyonight
-          hide_border: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
-
-      - name: Commit updated cards
+      - name: Commit cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
