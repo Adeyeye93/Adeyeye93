@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/Adeyeye93">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=1000&color=F7F7F7&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Adeyeye+Seyi;Founder+%26+Lead+Architect+%40+Echo;Building+audio+streaming+infra+for+Africa" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F7F7F7&center=true&vCenter=true&width=900&lines=Hi%2C+I'm+Adeyeye+Seyi;Founder+%26+Lead+Architect+%40+Echo;Building+audio+infra+for+Africa" alt="Typing SVG" />
   </a>
 </p>
 
@@ -50,10 +50,10 @@ I'm a self-taught software engineer based in Lagos, Nigeria, currently building 
 </p>
 
 <p align="left">
-  <img src="./profile/streak-stats.svg" alt="GitHub streak" />
+  <img src="https://streak-stats.demolab.com?user=Adeyeye93&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </p>
 
-> Stats above are regenerated daily by a GitHub Action (see `.github/workflows/readme-stats.yml`) and committed as static files, so they stay up even if third-party badge services rate-limit or go down.
+> The stats/top-langs cards above are regenerated daily by a GitHub Action (see `.github/workflows/readme-stats-fixed.yml`) and committed as static files, so they stay up even if third-party badge services go down. The streak card still pulls live from `streak-stats.demolab.com` — a currently-working mirror of the streak-stats project — since there's no reliable committable-Action equivalent for it yet.
 
 ### Featured Project
 
